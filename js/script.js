@@ -22,8 +22,21 @@ const sliderImage = new Vue ({
         
         nextImg() {
             
+            setInterval(() => {
+
+                this.init ++;
+                
+                if (this.init > this.imagine.length - 1) {
+
+                  this.init = 0;
+
+                }
+              }, 3000)
+
             // Metodo ternario 
             (this.init == this.imagine.length - 1) ? this.init = 0 : this.init ++;
+
+            
 
             // metodo classico 
             // this.init ++;
@@ -57,7 +70,10 @@ const sliderImage = new Vue ({
             setInterval(() => {
                 this.init++
                 
-              }, 300)
+                if (this.image.length <= this.init) {
+                  this.init = 0
+                }
+              }, 5000)
 
 
 
