@@ -71,6 +71,10 @@ const sliderImage = new Vue ({
 
         },
 
+        cangePhoto(indice){
+            this.init = indice;
+        }
+
     }
 
 });
