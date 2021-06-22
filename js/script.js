@@ -53,7 +53,22 @@ const sliderImage = new Vue ({
 
         
          autoPlay() {
-             this.init = setInterval(this.init ++, 5000);
+
+            setInterval(() => {
+                this.init++
+                
+              }, 300)
+
+
+
+
+
+
+
+
+
+            //  this.init = setInterval(() => {
+            //     this.init++
 
             //  function add() {
             //      this.init ++;
