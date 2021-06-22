@@ -31,7 +31,7 @@ const sliderImage = new Vue ({
                 this.init = 0;
 
             }
-        }, 3000)
+        }, 6000)
 
     },
 

@@ -32,6 +32,7 @@
                 <i  class="fas fa-circle" :class="(index == init) ? 'active' : ''" v-for="(item, index) in imagine"></i>
             </div>
              
+            <span :class="(index == init) ? '' : ''">{{init +1}} / 4</span>
         </div>
         
     </div>
