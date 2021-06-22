@@ -49,7 +49,16 @@ const sliderImage = new Vue ({
 
             //  }
 
-        }
+        },
+
+        
+         autoPlay() {
+             this.init = setInterval(add, 1000);
+
+             function add() {
+                 this.init ++;
+             }
+         }
 
 
     }
