@@ -44,3 +44,7 @@
     margin: 5px;
     color: white;
 }
+
+.nav > i.active {
+    color: blue;
+}

@@ -41,13 +41,13 @@ const sliderImage = new Vue ({
             (this.init == 0) ? this.init = this.imagine.length - 1 : this.init --;
 
             // metodo classico
-            // this.init --;
+            //  this.init --;
 
-            // if(this.init == 0) {
+            //  if(this.init < 0) {
 
-            // this.init = this.imagine.length - 1;
+            //  this.init = this.imagine.length - 1;
 
-            // }
+            //  }
 
         }
 

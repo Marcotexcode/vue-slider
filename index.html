@@ -29,15 +29,14 @@
             </div>
 
             <div class="nav">
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
+
+                <i  class="fas fa-circle" :class="(index == init) ? 'active' : ''" v-for="(item, index) in imagine"></i>
+                
             </div>
              
         </div>
-
-  
+        
+        
 
     <script src="js/script.js"></script>
 </body>
