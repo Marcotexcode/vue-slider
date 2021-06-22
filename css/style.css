@@ -40,6 +40,11 @@
     top: 75%;
 }
 
+i {
+    cursor: -webkit-grab; 
+    cursor: grab;
+}
+
 .nav i{
     margin: 5px;
     color: white;
@@ -48,3 +53,5 @@
 .nav > i.active {
     color: blue;
 }
+
+

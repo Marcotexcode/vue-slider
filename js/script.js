@@ -4,6 +4,7 @@ const sliderImage = new Vue ({
 
     el: '#sliderImage',
 
+    // dati
     data: {
 
         init: 0,
@@ -18,7 +19,7 @@ const sliderImage = new Vue ({
         ]
     },
 
-
+    // metodi vuejs
     mounted() {
         
         setInterval(() => {
@@ -34,7 +35,7 @@ const sliderImage = new Vue ({
 
     },
 
-
+    // metodi miei
     methods: {
         
         nextImg() {
@@ -43,8 +44,6 @@ const sliderImage = new Vue ({
 
             // Metodo ternario 
             (this.init == this.imagine.length - 1) ? this.init = 0 : this.init ++;
-
-            
 
             // metodo classico 
             // this.init ++;
