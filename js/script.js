@@ -16,7 +16,8 @@ const sliderImage = new Vue ({
             '../img/3.jpg',
             '../img/4.jpg',
 
-        ]
+        ],
+
     },
 
     // metodi vuejs
