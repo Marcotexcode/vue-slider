@@ -18,20 +18,28 @@ const sliderImage = new Vue ({
         ]
     },
 
+
+    mounted() {
+        
+        setInterval(() => {
+
+            this.init ++;
+            
+            if (this.init > this.imagine.length - 1) {
+
+                this.init = 0;
+
+            }
+        }, 3000)
+
+    },
+
+
     methods: {
         
         nextImg() {
             
-            setInterval(() => {
-
-                this.init ++;
-                
-                if (this.init > this.imagine.length - 1) {
-
-                  this.init = 0;
-
-                }
-              }, 3000)
+           
 
             // Metodo ternario 
             (this.init == this.imagine.length - 1) ? this.init = 0 : this.init ++;
@@ -64,37 +72,7 @@ const sliderImage = new Vue ({
 
         },
 
-        
-         autoPlay() {
-
-            setInterval(() => {
-                this.init++
-                
-                if (this.image.length <= this.init) {
-                  this.init = 0
-                }
-              }, 5000)
-
-
-
-
-
-
-
-
-
-            //  this.init = setInterval(() => {
-            //     this.init++
-
-            //  function add() {
-            //      this.init ++;
-            //  }
-         }
-
-
     }
-
-
 
 });
 
